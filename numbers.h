@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "utilities.h"
 
 void numToWords(/* arguments */) {
 	/* code */
