@@ -1,18 +1,7 @@
 #include <stdio.h>
-#include "utilities.h"
+#include <string.h>
 
-void numToWords(/* arguments */) {
-	/* code */
-}
-
-int wordsToNum(/* arguments */) {
-	/* code */
-}
-
-char * wordsToCurrency(/* arguments */) {
-	/* code */
-}
-
-void numberDelimited(/* arguments */) {
-	/* code */
-}
+void numToWords(/* arguments */);
+int wordsToNum(/* arguments */);
+char * wordsToCurrency(/* arguments */);
+void numberDelimited(/* arguments */);
