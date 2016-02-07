@@ -19,7 +19,7 @@ void handleHundreds(int num);
 /*******************************************************************************
 	numToWords()
 	A function that prints the equivalent word for a number
-	intendedly from 0 - 1000000, but can accomodate up to 999999999
+	intendedly from 0 - 1000000
 *******************************************************************************/
 void numToWords(int num);
 int wordsToNum(/* arguments */);
