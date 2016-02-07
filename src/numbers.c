@@ -4,8 +4,6 @@
 // Helper functions =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void printNum(int num) {
 	switch (num) {
-		case 0: printf("zero");
-			break;
 		case 1: printf("one");
 			break;
 		case 2: printf("two");
@@ -94,7 +92,7 @@ void handleHundreds(int num){
 // Main functions =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void numToWords(int num) {
 	if(num == 0){
-		printNum(num);
+		puts("zero");
 		return;
 	}
 
