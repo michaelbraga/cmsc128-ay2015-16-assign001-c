@@ -82,9 +82,13 @@ void handleHundreds(int num){
 			putchar('-');
 			printNum(num%10);
 		}
+		putchar(' ');
 	}
 	else{
 		printNum(num);
+		
+		if(num != 0)
+			putchar(' ');
 	}
 }
 
@@ -110,7 +114,7 @@ void numToWords(int num) {
 	x = num / 1000;
 	if(x != 0){
 		handleHundreds(x);
-		printf(" thousand ");
+		printf("thousand ");
 	}
 	num %= 1000;
 
