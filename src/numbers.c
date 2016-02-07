@@ -105,8 +105,8 @@ void numToWords(int num) {
 	/* handle millions */
 	x = num / 1000000;
 	if(x != 0){
-		printNum(x);
-		printf(" million ");
+		handleHundreds(x);
+		printf("million ");
 	}
 	num %= 1000000;
 
