@@ -1,7 +1,7 @@
 #include "numbers.h"
 
 
-// Helper functions =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// HELPER FUNCTIONS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void printNum(int num) {
 	switch (num) {
 		case 1: printf("one");
@@ -60,7 +60,6 @@ void printNum(int num) {
 			break;
 	}
 }
-
 void handleHundreds(int num){
 	if(num == 0)
 		return;
@@ -84,23 +83,24 @@ void handleHundreds(int num){
 		}
 		putchar(' ');
 	}
+	/* for ones only */
 	else{
 		printNum(num);
-		
 		if(num != 0)
 			putchar(' ');
 	}
 }
 
 
-// Main functions =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// MAIN FUNCTIONS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void numToWords(int num) {
+	/* Variable Declarations */
+	int x;
+
 	if(num == 0){
 		puts("zero");
 		return;
 	}
-
-	int x; // will be used for storage
 
 	/* handle millions */
 	x = num / 1000000;
@@ -120,7 +120,6 @@ void numToWords(int num) {
 
 	/* handle hundreds */
 	handleHundreds(num);
-
 }
 
 int wordsToNum(/* arguments */) {
