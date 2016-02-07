@@ -1,26 +1,7 @@
 #include "numbers.h"
 
-void numToWords(/* arguments */) {
-	/* code */
-}
 
-int wordsToNum(/* arguments */) {
-	/* code */
-	return 0;
-}
-
-char * wordsToCurrency(/* arguments */) {
-	/* code */
-	char * s;
-	return s;
-}
-
-void numberDelimited(/* arguments */) {
-	/* code */
-}
-
-
-// HELPERS
+// Helper functions =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void printNum(int num) {
 	switch (num) {
 		case 0: printf("zero");
@@ -80,4 +61,77 @@ void printNum(int num) {
 		case 90: printf("ninety");
 			break;
 	}
+}
+
+void handleHundreds(int num){
+	if(num == 0)
+		return;
+
+	/* has hundreds place */
+	if(num / 100 != 0){
+		printNum(num /100);
+		printf(" hundred ");
+	}
+	num %= 100;
+
+	/* for tens and ones place */
+	if(num / 10 != 0){
+		if(num/10 == 1 || num % 10 == 0){
+			printNum(num);
+		}
+		else{
+			printNum(num-(num%10));
+			putchar('-');
+			printNum(num%10);
+		}
+	}
+	else{
+		printNum(num);
+	}
+}
+
+
+// Main functions =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+void numToWords(int num) {
+	if(num == 0){
+		printNum(num);
+		return;
+	}
+
+	int x; // will be used for storage
+
+	/* handle millions */
+	x = num / 1000000;
+	if(x != 0){
+		printNum(x);
+		printf(" million ");
+	}
+	num %= 1000000;
+
+	/* handle thousands */
+	x = num / 1000;
+	if(x != 0){
+		handleHundreds(x);
+		printf(" thousand ");
+	}
+	num %= 1000;
+
+	/* handle hundreds */
+	handleHundreds(num);
+
+}
+
+int wordsToNum(/* arguments */) {
+	/* code */
+	return 0;
+}
+
+char * wordsToCurrency(/* arguments */) {
+	/* code */
+	char * s;
+	return s;
+}
+
+void numberDelimited(/* arguments */) {
+	/* code */
 }
