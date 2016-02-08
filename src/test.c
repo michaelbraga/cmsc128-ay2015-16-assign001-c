@@ -1,5 +1,7 @@
 #include "numbers.h"
-
+/*
+	For testing purposes only
+*/
 int main(int argc, char const *argv[]) {
 
 	int x = -1;

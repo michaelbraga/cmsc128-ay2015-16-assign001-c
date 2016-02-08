@@ -1,6 +1,5 @@
 #include "numbers.h"
 
-
 // HELPER FUNCTIONS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void printNum(int num) {
 	switch (num) {
@@ -60,9 +59,9 @@ void printNum(int num) {
 			break;
 	}
 }
+
 void handleHundreds(int num){
-	if(num == 0)
-		return;
+	if(num == 0) return;
 
 	/* has hundreds place */
 	if(num / 100 != 0){
@@ -86,17 +85,13 @@ void handleHundreds(int num){
 	/* for ones only */
 	else{
 		printNum(num);
-		if(num != 0)
-			putchar(' ');
+		if(num != 0) putchar(' ');
 	}
 }
 
-
 // MAIN FUNCTIONS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void numToWords(int num) {
-	/* Variable Declarations */
-	int x;
-
+	int x; // for storage
 	if(num == 0){
 		puts("zero");
 		return;
