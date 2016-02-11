@@ -328,14 +328,13 @@ char * wordsToCurrency(char * numWord, char * curr) {
 	// check if numWord valid
 	int num = wordsToNum(numWord);
 	if(num == -1) return NULL;
-
+	// allocate for new string to return
 	char result[80], number[80], *final;
 	final = (char *) malloc (12*sizeof(char));
 	sprintf(number, "%d", num);
 	strcpy(result, curr);
 	strcpy(&result[3], number);
 	strcpy(final, result);
-
 	return final;
 }
 
