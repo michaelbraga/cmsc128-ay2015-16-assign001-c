@@ -243,7 +243,7 @@ void numToWords(int num) {
 	handleHundreds(num);
 }
 /*******************************************************************************
-	numToWords()
+	wordsToNum()
 	A function that accepts a number in word form
 	(from zero to 1 million) and returns it in numerical form
 

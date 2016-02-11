@@ -35,7 +35,7 @@ int getNumber(char * numberWord);
 void numToWords(int num);
 
 /*******************************************************************************
-	numToWords()
+	wordsToNum()
 	A function that accepts a number in word form
 	(from zero to 1 million) and returns it in numerical form
 
@@ -45,10 +45,10 @@ void numToWords(int num);
 		<one-nineteen> <one-nineteen>
 		<twenty-ninety> <twenty-ninety>
 *******************************************************************************/
-int wordsToNum(/* arguments */);
+int wordsToNum(char * numWord);
 
 /*******************************************************************************
-	numToWords()
+	wordsToCurrency()
 	Accepts two arguments: the first argument is the number in word form
       (from zero to 1 million) and the second argument is any of the following:
 	JPY, PHP, USD. The function returns the number in words to its numerical
