@@ -19,11 +19,26 @@ void printNum(int num);
 void handleHundreds(int num);
 
 /*******************************************************************************
-	getNumber()
+	getNumber_1_to_9()
 	A function that accepts a string and returns its equivalent integer value
-	from 1-20, 30, 40, 50, 60, 70, 80, 90
+	from 1-9
 *******************************************************************************/
-int getNumber(char * numberWord);
+int getNumber_1_to_9(char * numWord);
+
+/*******************************************************************************
+	getNumber_11_to_19()
+	A function that accepts a string and returns its equivalent integer value
+	from 11-19
+*******************************************************************************/
+int getNumber_11_to_19(char * numWord);
+
+/*******************************************************************************
+	getNumber_20_to_90()
+	A function that accepts a string and returns its equivalent integer value
+	from 20, 30, 40, 50, 60, 70, 80, 90
+*******************************************************************************/
+int getNumber_20_to_90(char * numWord);
+// =============================================================================== //
 
 // Main functions
 /*******************************************************************************
@@ -56,4 +71,11 @@ int wordsToNum(char * numWord);
 *******************************************************************************/
 char * wordsToCurrency(char * numWord, char * curr);
 
-void numberDelimited(/* arguments */);
+/*******************************************************************************
+	numberDelimited()
+	Accepts three arguments: the first is the number from zero to 1 miliion,
+	the second is the delimiter to be used (single character only) and third,
+	the number of jumps when the delimiter will appear (from right most going
+	to left most digit)
+*******************************************************************************/
+char * numberDelimited(int num, char delimiter, int jump);

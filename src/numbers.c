@@ -77,7 +77,6 @@ void printNum(int num) {
 *******************************************************************************/
 void handleHundreds(int num){
 	if(num == 0) return;
-
 	// has hundreds place
 	if(num / 100 != 0){
 		printNum(num /100);
@@ -90,7 +89,7 @@ void handleHundreds(int num){
 			printNum(num);
 		else{
 			printNum(num-(num%10));
-			putchar('-');
+			putchar(' ');
 			printNum(num%10);
 		}
 		putchar(' ');
@@ -333,11 +332,32 @@ char * wordsToCurrency(char * numWord, char * curr) {
 	final = (char *) malloc (12*sizeof(char));
 	sprintf(number, "%d", num);
 	strcpy(result, curr);
-	strcpy(&result[3], number);
+	strcat(result, number);
 	strcpy(final, result);
 	return final;
 }
+/*******************************************************************************
+	numberDelimited()
+	Accepts three arguments: the first is the number from zero to 1 miliion,
+	the second is the delimiter to be used (single character only) and third,
+	the number of jumps when the delimiter will appear (from right most going
+	to left most digit)
+*******************************************************************************/
+char * numberDelimited(int num, char delimiter, int jump) {
+	char number[10], carrier[10], *final = (char*) malloc(sizeof(char)*12);
+	int len, i, j;
 
-void numberDelimited(/* arguments */) {
-	/* code */
+	sprintf(number, "%d", num); // make int to string
+	// generate string to return
+	for (i = 0, j = 0, len = strlen(number)+1; i < len; i++) {
+		if(i == ((len-1) - jump) ) // if need to put delimiter
+			carrier[i] = delimiter;
+		else{
+			carrier[i] = number[j];
+			j++;
+		}
+	}
+	carrier[i] = '\0';
+	strcpy(final, carrier);
+	return final;
 }
