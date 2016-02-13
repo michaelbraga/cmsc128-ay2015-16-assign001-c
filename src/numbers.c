@@ -14,60 +14,33 @@
 *******************************************************************************/
 void printNum(int num) {
 	switch (num) {
-		case 1: printf("one");
-			break;
-		case 2: printf("two");
-			break;
-		case 3: printf("three");
-			break;
-		case 4: printf("four");
-			break;
-		case 5: printf("five");
-			break;
-		case 6: printf("six");
-			break;
-		case 7: printf("seven");
-			break;
-		case 8: printf("eight");
-			break;
-		case 9: printf("nine");
-			break;
-		case 10: printf("ten");
-			break;
-		case 11: printf("eleven");
-			break;
-		case 12: printf("twelve");
-			break;
-		case 13: printf("thirteen");
-			break;
-		case 14: printf("fourteen");
-			break;
-		case 15: printf("fifteen");
-			break;
-		case 16: printf("sixteen");
-			break;
-		case 17: printf("seventeen");
-			break;
-		case 18: printf("eighteen");
-			break;
-		case 19: printf("nineteen");
-			break;
-		case 20: printf("twenty");
-			break;
-		case 30: printf("thirty");
-			break;
-		case 40: printf("forty");
-			break;
-		case 50: printf("fifty");
-			break;
-		case 60: printf("sixty");
-			break;
-		case 70: printf("seventy");
-			break;
-		case 80: printf("eighty");
-			break;
-		case 90: printf("ninety");
-			break;
+		case 1: printf("one");break;
+		case 2: printf("two");break;
+		case 3: printf("three");break;
+		case 4: printf("four");break;
+		case 5: printf("five");break;
+		case 6: printf("six");break;
+		case 7: printf("seven");break;
+		case 8: printf("eight");break;
+		case 9: printf("nine");break;
+		case 10: printf("ten");break;
+		case 11: printf("eleven");break;
+		case 12: printf("twelve");break;
+		case 13: printf("thirteen");break;
+		case 14: printf("fourteen");break;
+		case 15: printf("fifteen");break;
+		case 16: printf("sixteen");break;
+		case 17: printf("seventeen");break;
+		case 18: printf("eighteen");break;
+		case 19: printf("nineteen");break;
+		case 20: printf("twenty");break;
+		case 30: printf("thirty");break;
+		case 40: printf("forty");break;
+		case 50: printf("fifty");break;
+		case 60: printf("sixty");break;
+		case 70: printf("seventy");break;
+		case 80: printf("eighty");break;
+		case 90: printf("ninety");break;
 	}
 }
 /*******************************************************************************
@@ -116,24 +89,15 @@ int getNumber_1_to_9(char * numWord){
 	char eight[6] = "eight";
 	char nine[5] = "nine";
 
-	if(strcmp(numWord, one) == 0)
-		return 1;
-	else if(strcmp(numWord, two) == 0)
-		return 2;
-	else if(strcmp(numWord, three) == 0)
-		return 3;
-	else if(strcmp(numWord, four) == 0)
-		return 4;
-	else if(strcmp(numWord, five) == 0)
-		return 5;
-	else if(strcmp(numWord, six) == 0)
-		return 6;
-	else if(strcmp(numWord, seven) == 0)
-		return 7;
-	else if(strcmp(numWord, eight) == 0)
-		return 8;
-	else if(strcmp(numWord, nine) == 0)
-		return 9;
+	if(strcmp(numWord, one) == 0)			return 1;
+	else if(strcmp(numWord, two) == 0)		return 2;
+	else if(strcmp(numWord, three) == 0)	return 3;
+	else if(strcmp(numWord, four) == 0)		return 4;
+	else if(strcmp(numWord, five) == 0)		return 5;
+	else if(strcmp(numWord, six) == 0)		return 6;
+	else if(strcmp(numWord, seven) == 0)	return 7;
+	else if(strcmp(numWord, eight) == 0)	return 8;
+	else if(strcmp(numWord, nine) == 0)		return 9;
 	return 0;
 }
 /*******************************************************************************
@@ -153,26 +117,16 @@ int getNumber_11_to_19(char * numWord){
 	char eighteen[9] = "eighteen";
 	char nineteen[9] = "nineteen";
 
-	if(strcmp(numWord, ten) == 0)
-		return 10;
-	else if(strcmp(numWord, eleven) == 0)
-		return 11;
-	else if(strcmp(numWord, twelve) == 0)
-		return 12;
-	else if(strcmp(numWord, thirteen) == 0)
-		return 13;
-	else if(strcmp(numWord, fourteen) == 0)
-		return 14;
-	else if(strcmp(numWord, fifteen) == 0)
-		return 15;
-	else if(strcmp(numWord, sixteen) == 0)
-		return 16;
-	else if(strcmp(numWord, seventeen) == 0)
-		return 17;
-	else if(strcmp(numWord, eighteen) == 0)
-		return 18;
-	else if(strcmp(numWord, nineteen) == 0)
-		return 19;
+	if(strcmp(numWord, ten) == 0)			return 10;
+	else if(strcmp(numWord, eleven) == 0)	return 11;
+	else if(strcmp(numWord, twelve) == 0)	return 12;
+	else if(strcmp(numWord, thirteen) == 0)	return 13;
+	else if(strcmp(numWord, fourteen) == 0)	return 14;
+	else if(strcmp(numWord, fifteen) == 0)	return 15;
+	else if(strcmp(numWord, sixteen) == 0)	return 16;
+	else if(strcmp(numWord, seventeen) == 0)	return 17;
+	else if(strcmp(numWord, eighteen) == 0)	return 18;
+	else if(strcmp(numWord, nineteen) == 0)	return 19;
 	return 0;
 }
 /*******************************************************************************
@@ -190,22 +144,14 @@ int getNumber_20_to_90(char * numWord){
 	char eighty[7] = "eighty";
 	char ninety[7] = "ninety";
 
-	if(strcmp(numWord, twenty) == 0)
-		return 20;
-	else if(strcmp(numWord, thirty) == 0)
-		return 30;
-	else if(strcmp(numWord, forty) == 0)
-		return 40;
-	else if(strcmp(numWord, fifty) == 0)
-		return 50;
-	else if(strcmp(numWord, sixty) == 0)
-		return 60;
-	else if(strcmp(numWord, seventy) == 0)
-		return 70;
-	else if(strcmp(numWord, eighty) == 0)
-		return 80;
-	else if(strcmp(numWord, ninety) == 0)
-		return 90;
+	if(strcmp(numWord, twenty) == 0)		return 20;
+	else if(strcmp(numWord, thirty) == 0)	return 30;
+	else if(strcmp(numWord, forty) == 0)	return 40;
+	else if(strcmp(numWord, fifty) == 0)	return 50;
+	else if(strcmp(numWord, sixty) == 0)	return 60;
+	else if(strcmp(numWord, seventy) == 0)	return 70;
+	else if(strcmp(numWord, eighty) == 0)	return 80;
+	else if(strcmp(numWord, ninety) == 0)	return 90;
 	return 0;
 }
 
@@ -245,7 +191,6 @@ void numToWords(int num) {
 	wordsToNum()
 	A function that accepts a number in word form
 	(from zero to 1 million) and returns it in numerical form
-
 	Errors that can be caught:
 		<twenty-ninety> <eleven-nineteen>
 		<eleven-nineteen> <twenty-ninety>
