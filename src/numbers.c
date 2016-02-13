@@ -89,15 +89,15 @@ int getNumber_1_to_9(char * numWord){
 	char eight[6] = "eight";
 	char nine[5] = "nine";
 
-	if(strcmp(numWord, one) == 0)			return 1;
-	else if(strcmp(numWord, two) == 0)		return 2;
-	else if(strcmp(numWord, three) == 0)	return 3;
-	else if(strcmp(numWord, four) == 0)		return 4;
-	else if(strcmp(numWord, five) == 0)		return 5;
-	else if(strcmp(numWord, six) == 0)		return 6;
-	else if(strcmp(numWord, seven) == 0)	return 7;
-	else if(strcmp(numWord, eight) == 0)	return 8;
-	else if(strcmp(numWord, nine) == 0)		return 9;
+	if(strcmp(numWord, one) == 0)		return 1;
+	else if(strcmp(numWord, two) == 0)	return 2;
+	else if(strcmp(numWord, three) == 0)return 3;
+	else if(strcmp(numWord, four) == 0)	return 4;
+	else if(strcmp(numWord, five) == 0)	return 5;
+	else if(strcmp(numWord, six) == 0)	return 6;
+	else if(strcmp(numWord, seven) == 0)return 7;
+	else if(strcmp(numWord, eight) == 0)return 8;
+	else if(strcmp(numWord, nine) == 0)	return 9;
 	return 0;
 }
 /*******************************************************************************
@@ -117,7 +117,7 @@ int getNumber_11_to_19(char * numWord){
 	char eighteen[9] = "eighteen";
 	char nineteen[9] = "nineteen";
 
-	if(strcmp(numWord, ten) == 0)			return 10;
+	if(strcmp(numWord, ten) == 0)		return 10;
 	else if(strcmp(numWord, eleven) == 0)	return 11;
 	else if(strcmp(numWord, twelve) == 0)	return 12;
 	else if(strcmp(numWord, thirteen) == 0)	return 13;
