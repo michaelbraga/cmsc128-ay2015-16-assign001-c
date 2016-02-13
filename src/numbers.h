@@ -1,3 +1,9 @@
+/*
+	Author:  Michael Arvin Jay C. Braga
+	Section: CMSC 128 AB-2L
+	Description: A library comprised of functions:
+	             numToWords, wordsToNum, wordsToCurrency, numberDelimited.
+*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
