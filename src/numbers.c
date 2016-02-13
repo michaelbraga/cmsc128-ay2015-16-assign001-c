@@ -91,12 +91,12 @@ int getNumber_1_to_9(char * numWord){
 
 	if(strcmp(numWord, one) == 0)		return 1;
 	else if(strcmp(numWord, two) == 0)	return 2;
-	else if(strcmp(numWord, three) == 0)return 3;
+	else if(strcmp(numWord, three) == 0)	return 3;
 	else if(strcmp(numWord, four) == 0)	return 4;
 	else if(strcmp(numWord, five) == 0)	return 5;
 	else if(strcmp(numWord, six) == 0)	return 6;
-	else if(strcmp(numWord, seven) == 0)return 7;
-	else if(strcmp(numWord, eight) == 0)return 8;
+	else if(strcmp(numWord, seven) == 0)	return 7;
+	else if(strcmp(numWord, eight) == 0)	return 8;
 	else if(strcmp(numWord, nine) == 0)	return 9;
 	return 0;
 }
